@@ -26,7 +26,7 @@ class DigitalTimer extends Component {
   buttImageFunc = () => {
     const {isStart} = this.state
     if (isStart) {
-      this.tick();
+      this.tick()
       this.interval = setInterval(this.tick, 1000)
     } else {
       clearInterval(this.interval)
@@ -56,7 +56,7 @@ class DigitalTimer extends Component {
     time = 60
     k = ini
     seconds = 0
-    this.setState({isStart: true, ini:25, min: 25, sec: seconds, en: true})
+    this.setState({isStart: true, ini: 25, min: 25, sec: seconds, en: true})
   }
 
   render() {
